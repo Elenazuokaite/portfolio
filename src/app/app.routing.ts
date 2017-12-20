@@ -9,11 +9,11 @@ import { MainComponent } from './main/main.component';
 
 
 const APP_Routes: Routes = [
-    { path: '', pathMatch:'full', component: MainComponent },
+    { path: '', pathMatch: 'full', component: MainComponent },
     { path: 'about', component: AboutComponent },
     { path: 'skills', component: SkillsComponent },
     { path: 'work', component: WorkComponent },
     { path: 'contact', component: ContactComponent },
-  ]
-  
+  ];
+
   export const routing: ModuleWithProviders = RouterModule.forRoot(APP_Routes);

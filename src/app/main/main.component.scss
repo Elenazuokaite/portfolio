@@ -1,5 +1,8 @@
 #hero {
     background-color: #ff9bcd;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    transition: background-color 2s, border-top-left-radius 1s ease-in, border-top-right-radius 1s ease-in;
     position: absolute;
     z-index: 2;
     bottom: 0;

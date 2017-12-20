@@ -19,7 +19,6 @@ body::after {
     right: 0;
 }
 .carousel {
-    /* overflow: hidden; */
     position: relative;
     width: 100%;
     top: -149px;
@@ -33,7 +32,7 @@ body::after {
             width: auto;
         }
 }
-// .carousel-item {
-//     width: auto;
-//     padding: 0 100px;
-// }
+.carousel-item {
+    width: auto;
+    padding: 0 25px;
+}
