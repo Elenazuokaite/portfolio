@@ -20,5 +20,15 @@
         text-align: center;
         }       
     }
+    .logo {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .logo2 {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s;
+    }
 }
 

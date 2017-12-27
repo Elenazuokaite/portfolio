@@ -17,7 +17,7 @@ $(document).ready(function(){
       } else if ($(this).attr('id') == 'three') {
         $('#hero').css('background-color', '#fff38b');
       } else if ($(this).attr('id') == 'four') {
-        $('#hero').css('background-color', '#f5b7ff');
+        $('#hero').css('background', '#f5b7ff');
       } else if ($(this).attr('id') == 'five') {
         $('#hero').css('background-color', '#ff9bcd');
       } else {
@@ -77,8 +77,11 @@ $(document).ready(function(){
       $('#hero').css('background-color', '#bde9f5');
     } else if ($(this).attr('id') == 'four') {
       $('#hero').css('background-color', '#fff38b');
+      $('.logo').css('opacity', '1');
     } else if ($(this).attr('id') == 'five') {
       $('#hero').css('background-color', '#f5b7ff');
+         $('.logo').css('opacity', '0');
+         $('.logo2').css('opacity', '1');
     } else {
       $('#hero').css('background-color', '#ff9bcd');
     }
