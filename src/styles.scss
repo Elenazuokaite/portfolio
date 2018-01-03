@@ -36,3 +36,12 @@ body {
     width: auto;
     padding: 0 25px;
 }
+nav, footer, .patern, .carousel, #hero {
+    display: none;
+}
+#container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }

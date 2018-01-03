@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 @NgModule({
@@ -24,7 +25,16 @@ import { MainComponent } from './main/main.component';
   imports: [
     BrowserModule,
     routing,
-    RouterModule
+    RouterModule,
+    NgCircleProgressModule.forRoot({
+      radius: 60,
+      outerStrokeWidth: 12,
+      innerStrokeWidth: 6,
+      outerStrokeColor: "gray",
+      innerStrokeColor: "grey",
+      animationDuration: 1000,
+      renderOnClick: true,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

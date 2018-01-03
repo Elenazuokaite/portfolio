@@ -1,9 +1,33 @@
-<div class="valign-wrapper" id="hero"> 
+<div class="valign-wrapper" id="hero">
     <div class="carousel">
-        <a class="carousel-item" href="#one!" id="one">Angular</a>
-        <a class="carousel-item" href="#two!" id="two">CSS</a>
-        <a class="carousel-item" href="#three!" id="three">javaScript</a>
-        <a class="carousel-item" href="#four!" id="four">Bootstrap</a>
-        <a class="carousel-item" href="#five!" id="five">Wordpress</a>
+        <div class="carousel-item" id="one">
+            <a href="#one!">Angular</a>
+            <div>
+                <circle-progress 
+                [percent]="85" 
+                [radius]="60" 
+                [outerStrokeWidth]="12" 
+                [innerStrokeWidth]="6" 
+                [outerStrokeColor]="gray" 
+                [innerStrokeColor]="grey"
+                [animation]="true" 
+                [renderOnClick]="true"
+                [animationDuration]="1000">
+                </circle-progress>
+            </div>
+
+        </div>
+        <div class="carousel-item" id="two">
+            <a href="#two!">CSS</a>
+        </div>
+        <div class="carousel-item" id="three">
+            <a href="#three!">javaScript</a>
+        </div>
+        <div class="carousel-item" id="four">
+            <a href="#four!">Bootstrap</a>
+        </div>
+        <div class="carousel-item" id="five">
+            <a href="#five!">Wordpress</a>
+        </div>
     </div>
 </div>
