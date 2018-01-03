@@ -1,4 +1,7 @@
-$(document).ready(function(){
+$(document).ready(landPage);
+
+  function landPage(jQuery){
+    $("#homeLink").click(landPage);
   $('nav').css('display', 'none');
   $('footer').css('display', 'none');
   $('.patern').css('display', 'none');
@@ -38,8 +41,6 @@ $(document).ready(function(){
       }
     }
   });
-  
-
   // $('.carousel-item').scroll(function () {
   //   if ($(this).attr('id') == 'two') {
   //     $('#hero').css('background-color', '#aefab1');
@@ -80,11 +81,10 @@ $(document).ready(function(){
       $('.logo').css('opacity', '1');
     } else if ($(this).attr('id') == 'five') {
       $('#hero').css('background-color', '#f5b7ff');
-         $('.logo').css('opacity', '0');
-         $('.logo2').css('opacity', '1');
     } else {
       $('#hero').css('background-color', '#ff9bcd');
     }
   })
-  });
+  }
+
   

@@ -3,21 +3,21 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 10px;
 }
-body::before, body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 100%;
-    background-color: #ffffff;
-    z-index: 1000;
-    width: 10px; 
-}
-body::before {
-    left: 0;
-}
-body::after {
-    right: 0;
-}
+// body::before, body::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     height: 100%;
+//     background-color: #ffffff;
+//     z-index: 1000;
+//     width: 10px; 
+// }
+// body::before {
+//     left: 0;
+// }
+// body::after {
+//     right: 0;
+// }
 .carousel {
     position: relative;
     width: 100%;
