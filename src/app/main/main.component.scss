@@ -10,8 +10,10 @@
     right: 0;
     background-size: cover;
     height: 50vh;
-    justify-content: center;
     .carousel {
+        circle-progress {
+            padding-left: 100px;
+        }
         a {
         font-weight: 600;
         font-size: 100px;
@@ -20,15 +22,9 @@
         text-align: center;
         }       
     }
-    .logo {
-        position: absolute;
-        opacity: 0;
-        transition: opacity 1s;
-    }
-    .logo2 {
-        position: absolute;
-        opacity: 0;
-        transition: opacity 1s;
-    }
+}
+#prog-two, #prog-three, #prog-four, #prog-five,{
+    opacity: 0;
+    transition: opacity 1s;
 }
 

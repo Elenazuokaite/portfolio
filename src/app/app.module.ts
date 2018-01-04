@@ -11,6 +11,8 @@ import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -20,23 +22,43 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     SkillsComponent,
     WorkComponent,
     ContactComponent,
-    MainComponent
+    MainComponent,
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     routing,
     RouterModule,
     NgCircleProgressModule.forRoot({
-      radius: 60,
-      outerStrokeWidth: 12,
-      innerStrokeWidth: 6,
-      outerStrokeColor: "gray",
-      innerStrokeColor: "grey",
-      animationDuration: 1000,
-      renderOnClick: true,
+      'radius': 60,
+      'space': -10,
+      'outerStrokeWidth': 10,
+      'outerStrokeColor': '#808080',
+      'innerStrokeColor': '#ffffff00',
+      'innerStrokeWidth': 10,
+      'showSubtitle': false,
+      'subtitleFontSize': '32',
+      'animationDuration': 1000,
+      'showTitle': true,
+      'showUnits': true,
+      'showBackground': false,
+      // 'subtitleFormat': this.formatSubtitle()
     })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  formatSubtitle = (percent: number): string => {
+    if (percent >= 100) {
+      return 'Congratulations!';
+    } else if (percent >= 50) {
+      return 'Half';
+    } else if (percent > 0) {
+      return 'Just began';
+    } else {
+      return 'Not started';
+    }
+  }
+ }
