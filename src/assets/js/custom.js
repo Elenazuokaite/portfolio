@@ -1,10 +1,13 @@
 $(document).ready(landPage);
-
-function landPage(jQuery) {
+function slider() {
   $('#hero').slideDown(1000);
   $('#hero').css('border-top-left-radius', '0');
   $('#hero').css('border-top-right-radius', '0');
   $('.carousel').slideDown(2000);
+}
+function landPage(jQuery) {
+  //slide down hero, carousel
+    slider(); 
 
   // $('.carousel-item').bind('mousewheel', function (e) {
   //   if (e.originalEvent.wheelDelta / 120 > 0) {
@@ -52,14 +55,18 @@ function landPage(jQuery) {
   //   $(this).carousel('next');
   // });
 
-  setTimeout(function () {
-    $('nav').fadeIn(1000);
-    $('footer').fadeIn(1000);
-  }, 2000);
-  setTimeout(function () {
-    $('.patern').fadeIn(1000);
-
-  }, 1000);
+  //fade in nav, footer
+  function fadeInPage() {
+    setTimeout(function () {
+      $('nav').fadeIn(1000);
+      $('footer').fadeIn(1000);
+    }, 2000);
+    setTimeout(function () {
+      $('.patern').fadeIn(1000);
+    }, 1000);
+  }
+  fadeInPage();
+//carousel 
   $('.carousel').carousel({
     dist: 0,
     shift: 150,
@@ -79,6 +86,7 @@ function landPage(jQuery) {
       $('#hero').css('background-color', '#ff9bcd');
     }
   })
+  //call function on clicking logo
   $("#homeLink").click(landPage);
 }
 ////////////////////////////
