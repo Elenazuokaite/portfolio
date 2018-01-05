@@ -6,14 +6,15 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-@ViewChild('myCanvas') canvasRef: ElementRef;
   constructor() { }
+  // @ViewChild('myCanvas') canvasRef: ElementRef;
 
   ngOnInit() {
-    let ctx = this.canvasRef.nativeElement.getContext('2d');
-    ctx.moveTo(125, 30);
-    ctx.lineTo(31.9, 63.2);
-    ctx.lineTo(46.1, 186.3);
+    // const ctx: CanvasRenderingContext2D =
+    //   this.canvasRef.nativeElement.getContext('2d');
+    // ctx.moveTo(125, 30);
+    // ctx.lineTo(31.9, 63.2);
+    // ctx.lineTo(46.1, 186.3);
   }
 
 }

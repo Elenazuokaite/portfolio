@@ -13,6 +13,7 @@ import { MainComponent } from './main/main.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { CanvasComponent } from './canvas/canvas.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     MainComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
