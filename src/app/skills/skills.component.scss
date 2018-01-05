@@ -1,0 +1,29 @@
+#skills {
+    background-color: #ff9bcd;
+    // border-top-left-radius: 70%;
+    // border-top-right-radius: 70%;
+    transition: background-color 2s, border-top-left-radius 1s ease-in, border-top-right-radius 1s ease-in;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    height: 50vh;
+    .carousel {
+        .carousel-item {
+            text-align: center;
+        }
+        a {
+        font-weight: 600;
+        font-size: 100px;
+        color: #726d6f; 
+        font-family: 'Vidaloka', serif;
+        text-align: center;
+        }       
+    }
+}
+#prog-two, #prog-three, #prog-four, #prog-five,{
+    opacity: 0;
+    transition: opacity 1s;
+}

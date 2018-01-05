@@ -3,24 +3,23 @@ $(document).ready(landPage);
 var opened = false;
 
 function slider() {
-  if(opened===false) {
+  if (opened === false) {
     opened = true;
-     $('#hero').css('display', 'none');
-      $('#hero').slideDown(1000);  
-      $('#hero').css('border-top-left-radius', '0');
-      $('#hero').css('border-top-right-radius', '0'); 
+    // $('#hero').css('display', 'none');
+    $('#hero').slideDown(1000);
+    $('#hero').css('border-top-left-radius', '0');
+    $('#hero').css('border-top-right-radius', '0');
   } else {
     $('#hero').css('border-top-left-radius', '0');
     $('#hero').css('border-top-right-radius', '0');
+    $('#hero').css('display', 'block');
   }
- 
- 
   // $('.carousel').css('display', 'none');
   // $('.carousel').slideDown(3000);
 }
 function landPage(jQuery) {
   //slide down hero, carousel
-        slider(); 
+  slider();
   //fade in nav, footer
   function fadeInPage() {
     $('nav').css('display', 'none');
@@ -33,7 +32,7 @@ function landPage(jQuery) {
     }, 1000);
   }
   fadeInPage();
-//carousel 
+  //carousel 
   $('.carousel').carousel({
     dist: 0,
     shift: 150,
@@ -41,23 +40,23 @@ function landPage(jQuery) {
   });
   $('.carousel-item').click(function () {
     if ($(this).attr('id') == 'two') {
-      $('#hero').css('background-color', '#aefab1');
-       $('#prog-two').css('opacity', '1');
+      $('#skills').css('background-color', '#aefab1');
+      $('#prog-two').css('opacity', '1');
       $('#prog-one').css('opacity', '0');
     } else if ($(this).attr('id') == 'three') {
-      $('#hero').css('background-color', '#bde9f5');
+      $('#skills').css('background-color', '#bde9f5');
       $('#prog-three').css('opacity', '1');
       $('#prog-two').css('opacity', '0');
     } else if ($(this).attr('id') == 'four') {
-      $('#hero').css('background-color', '#fff38b');
+      $('#skills').css('background-color', '#fff38b');
       $('#prog-four').css('opacity', '1');
       $('#prog-three').css('opacity', '0');
     } else if ($(this).attr('id') == 'five') {
-      $('#hero').css('background-color', '#f5b7ff');
+      $('#skills').css('background-color', '#f5b7ff');
       $('#prog-five').css('opacity', '1');
       $('#prog-four').css('opacity', '0');
     } else {
-      $('#hero').css('background-color', '#ff9bcd');
+      $('#skills').css('background-color', '#ff9bcd');
       $('#prog-one').css('opacity', '1');
       $('#prog-five').css('opacity', '0');
       // $("#prog-one").show("slow");
@@ -65,6 +64,16 @@ function landPage(jQuery) {
   })
   //call function on clicking logo
   $("#homeLink").click(landPage);
+  $("#skillsLink").click(landPage);
+  // var canvas = $('#canvas');
+  // canvas.width = canvas.scrollWidth;
+  // canvas.height = canvas.scrollHeight;
+  // var ctx = canvas.getContext('2d');
+  // ctx.beginPath();
+  // ctx.moveTo(100, 100);
+  // ctx.lineTo(100, 300);
+  // ctx.lineTo(300, 300);
+  // ctx.closePath();
 }
 ////////////////////////////
 // $('.carousel-item').bind('mousewheel', function (e) {
