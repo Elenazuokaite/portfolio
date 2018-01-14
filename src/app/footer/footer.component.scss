@@ -1,13 +1,16 @@
 footer {
     position: fixed;
     left: 0;
-    right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0);
     z-index: 3;
     li {
        margin: 10px 0 0 40px; 
        font-size: 20px;
+       transition: font-size 0.1s ease-in;
+    }
+    li:hover {
+        font-size: 30px;
     }
 }
 .footer-copyright {

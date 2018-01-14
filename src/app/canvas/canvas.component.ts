@@ -2,8 +2,8 @@ import {  Component, Input, ElementRef, AfterViewInit, ViewChild } from '@angula
 
 @Component({
   selector: 'app-canvas',
-  template: '<canvas #canvas></canvas>',
-  styles: ['./canvas.component.scss']
+  templateUrl: './canvas.component.html',
+  styleUrls: ['./canvas.component.scss']
 })
 export class CanvasComponent implements AfterViewInit {
   // a reference to the canvas element from our template
