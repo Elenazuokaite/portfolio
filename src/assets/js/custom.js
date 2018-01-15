@@ -17,18 +17,22 @@ function slider() {
   // $('.carousel').css('display', 'none');
   // $('.carousel').slideDown(3000);
 }
+function showContact() {
+  $('#contact').slideDown(1000);
+};
 function landPage(jQuery) {
   //slide down hero, carousel
   slider();
+  showContact();
   //fade in nav, footer
   function fadeInPage() {
     $('nav').css('display', 'none');
     $('footer').css('display', 'none');
-    $('.patern').css('display', 'none');
+    $('canvas').css('display', 'none');
     setTimeout(function () {
       $('nav').fadeIn(1000);
       $('footer').fadeIn(1000);
-      $('.patern').fadeIn(1000);
+      $('canvas').fadeIn(1000);
     }, 1000);
   }
   fadeInPage();
@@ -62,18 +66,10 @@ function landPage(jQuery) {
       // $("#prog-one").show("slow");
     }
   })
-  //call function on clicking logo
+  //call function on clicking links
   $("#homeLink").click(landPage);
   $("#skillsLink").click(landPage);
-  // var canvas = $('#canvas');
-  // canvas.width = canvas.scrollWidth;
-  // canvas.height = canvas.scrollHeight;
-  // var ctx = canvas.getContext('2d');
-  // ctx.beginPath();
-  // ctx.moveTo(100, 100);
-  // ctx.lineTo(100, 300);
-  // ctx.lineTo(300, 300);
-  // ctx.closePath();
+  $("#contactLink").click(showContact);
 }
 ////////////////////////////
 // $('.carousel-item').bind('mousewheel', function (e) {
